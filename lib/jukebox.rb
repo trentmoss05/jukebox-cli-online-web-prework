@@ -39,7 +39,7 @@ def exit_jukebox
 end
 
 def run
-  help
+  #help
 
   input = ""
   while input
