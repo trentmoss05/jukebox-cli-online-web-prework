@@ -37,3 +37,27 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  help
+
+  input = ""
+  while input
+    puts "Please enter a command:"
+    input = gets.downcase.strip
+    case input
+    when 'list'
+      list(songs)
+    when 'play'
+      list(songs)
+      play(songs)
+    when 'help'
+      help
+    when 'exit'
+      exit_jukebox
+      break
+    else
+      help
+    end
+  end
+end
