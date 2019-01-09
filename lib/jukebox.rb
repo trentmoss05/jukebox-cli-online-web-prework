@@ -19,11 +19,5 @@ def help
 end
 
 def list(songs_array)
-  songs_array.each_with_index { |song| puts song }
-end
-
-def play(songs_array)
-  puts "Please enter a song name or number:"
-  response = gets.chomp
-  if response =
+  songs_array.each_with_index { |song, i| puts "#{i+1}. #{song} }
 end
