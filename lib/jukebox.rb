@@ -21,3 +21,15 @@ end
 def list(songs_array)
   songs_array.each_with_index { |song, i| puts "#{i+1}. #{song}" }
 end
+
+def play(songs_array)
+  puts "Please enter a song name or number:"
+  response = gets.chomp
+  if (1..9).to_a.include?(response.to_i)
+    puts "Playing #{songs_array[response.to_i - 1]}"
+  elsif songs_array.include?(response)
+    puts "Playing #{reponse}"
+  else
+    puts "Invalid input, please try again"
+  end
+end
