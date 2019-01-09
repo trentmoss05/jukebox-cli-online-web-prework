@@ -28,7 +28,7 @@ def play(songs_array)
   if (1..9).to_a.include?(response.to_i)
     puts "Playing #{songs_array[response.to_i - 1]}"
   elsif songs_array.include?(response)
-    puts "Playing #{reponse}"
+    puts "Playing #{response}"
   else
     puts "Invalid input, please try again"
   end
